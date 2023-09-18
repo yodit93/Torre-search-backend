@@ -1,8 +1,3 @@
 Rails.application.routes.draw do
-  get 'candidates/index'
-  get 'candidates/show'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :candidates, only: [:index, :show]
 end
