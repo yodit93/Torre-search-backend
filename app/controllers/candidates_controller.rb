@@ -8,4 +8,15 @@ class CandidatesController < ApplicationController
     @candidate = Candidate.find(params[:id])
     render json: @candidate
   end
+
+  def create
+    @candidate = Candidate.create(candidate_params)
+    render json: @candidate
+  end
+
+  private
+
+  def candidate_params
+    params.require(:candidate).permit(:name, :photo, :profession, :years_of_experience)
+  end
 end
