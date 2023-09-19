@@ -83,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: Torre_search_backend_production
-  username: Torre_search_backend
-  password: <%= ENV["TORRE_SEARCH_BACKEND_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
