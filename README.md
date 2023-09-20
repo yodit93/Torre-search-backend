@@ -62,7 +62,7 @@ Api end points for users to:
 <!-- LIVE DEMO -->
 
 ## Live Demo <a name="live-demo"></a>
-[Live Demo](https://torre-search-backend-hfm4.onrender.com)
+[Live Demo](https://torre-search-backend-hfm4.onrender.com/candidates)
 
 ## Getting Started <a name="getting-started"></a>
 
