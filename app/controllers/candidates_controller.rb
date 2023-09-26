@@ -22,9 +22,9 @@ class CandidatesController < ApplicationController
 
   def update
     @candidate = Candidate.find(params[:id])
-    @candidate.update_attributes(candidate_params)
+    @candidate.update(candidate_params)
     render json: @candidate
-  end
+  end  
 
   private
 
