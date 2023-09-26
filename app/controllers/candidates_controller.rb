@@ -14,6 +14,18 @@ class CandidatesController < ApplicationController
     render json: @candidate
   end
 
+  def destroy
+    @candidate = Candidate.find(params[:id])
+    @candidate.destroy
+    render json: @candidate
+  end
+
+  def update
+    @candidate = Candidate.find(params[:id])
+    @candidate.update_attributes(candidate_params)
+    render json: @candidate
+  end
+
   private
 
   def candidate_params
